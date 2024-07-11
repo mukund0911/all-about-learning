@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linear Regression
+parent: Fundamental Algorithms
 nav_order: 2
 ---
 
