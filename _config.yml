@@ -1,9 +1,9 @@
-title: Just the Docs Template
+title: All About Learning!
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
-# Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/deep_dive.png"
+# Set a path/url to a favicon that will be displayed by the browser
+favicon_ico: "/assets/images/deep_dive.png"
 
 url: https://just-the-docs.github.io
 
