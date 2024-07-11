@@ -23,13 +23,13 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 ## Simple Linear Regression
 
-### Estimating the Coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$
+### Estimating the Coefficients \(\hat{\beta}_0\) and \(\hat{\beta}_1\)
 
 ### Limitations
 
 ## Multiple Linear Regression
 
-### Estimating the Coefficients $\hat{\beta}_p$ for all $p = 1, \cdots, P$
+### Estimating the Coefficients \(\hat{\beta}_p\) for all \(p = 1, \cdots, P\)
 
 ### Limitations
 
