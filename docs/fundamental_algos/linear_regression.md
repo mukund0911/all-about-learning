@@ -3,6 +3,7 @@ layout: default
 title: Linear Regression
 parent: Fundamental Algorithms
 nav_order: 2
+mathjax: true
 ---
 
 # Configuration
@@ -24,7 +25,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 ## Simple Linear Regression
 As the name implies, simple linear regression is a very straightforward approach of predicting the output variable $Y$ based on a linear combination of input variables. Mathematically, 
 $$Y = \beta_0 + \beta_1\cdot X$$, 
-where $\beta_0, \beta_1$ represent the intercept and slope of the linear model respectively.
+where $\beta_0, \beta_1$ represent the intercept and slope parameters of the linear model, respectively. 
 
 ### Estimating the Coefficients \(\hat{\beta}_0\) and \(\hat{\beta}_1\)
 
