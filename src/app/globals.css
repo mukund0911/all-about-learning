@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* ── Editorial palette ───────────────────────────────────── */
+  --ink:       #0b0b0b;
+  --ink-2:     #141414;
+  --wire:      #242424;
+  --ghost:     #3a3a3a;
+  --mist:      #666666;
+  --text:      #f0ece4;
+  --text-2:    #888888;
+  --flash:     #c8ff00;
+  --flash-dim: rgba(200, 255, 0, 0.07);
+
+  /* ── Legacy compat — inner pages reference these ─────────── */
+  --bg-base:        #0b0b0b;
+  --bg-surface:     #141414;
+  --bg-raised:      #1c1c1c;
+  --accent-indigo:  #6366f1;
+  --accent-violet:  #8b5cf6;
+  --accent-cyan:    #06b6d4;
+  --accent-emerald: #10b981;
+  --text-primary:   #f0ece4;
+  --text-secondary: #888888;
+  --text-muted:     #555555;
+  --border:         rgba(255, 255, 255, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--ink);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--wire);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ghost);
+}
+
+::selection {
+  background: rgba(200, 255, 0, 0.18);
+  color: var(--text);
+}
+
+code, kbd, pre {
+  font-family: "Space Mono", "Fira Code", monospace;
+}
+
+.katex {
+  color: #e2e8f0 !important;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+}
+
+/* ── Legacy utilities — used by inner pages ─────────────── */
+.glow-indigo {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.15), 0 0 80px rgba(99, 102, 241, 0.05);
+}
+
+@keyframes gradient-rotate {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.gradient-animated {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4, #6366f1);
+  background-size: 300% 300%;
+  animation: gradient-rotate 5s ease infinite;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fade-up 0.5s ease forwards;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ── Mermaid diagrams ──────────────────────────────────── */
+.mermaid-container {
+  border: 1px solid var(--wire);
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.015);
+}
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
